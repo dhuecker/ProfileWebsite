@@ -70,6 +70,24 @@
 </head>
 <body>
 <script>
+
+	var keys = {};
+	window.addEventListener("keydown",
+			function(e){
+				keys[e.keyCode] = true;
+				switch(e.keyCode){
+					case 37: case 39: case 38:  case 40: // Arrow keys
+					case 32: e.preventDefault(); break; // Space
+					default: break; // do not block other keys
+				}
+			},
+			false);
+	window.addEventListener('keyup',
+			function(e){
+				keys[e.keyCode] = false;
+			},
+			false);
+
 	var
 
 			/**
@@ -387,5 +405,22 @@
 	// start and run the game
 	main();
 </script>
+
+<footer>
+
+	<div class="row">
+
+		<div class="twelve columns">
+
+			<ul class="copyright">
+				<li>&copy; Copyright 2019 David Huecker</li>
+			</ul>
+
+		</div>
+
+	</div>
+
+</footer> <!-- Footer End-->
+
 </body>
 </html>
