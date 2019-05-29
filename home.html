@@ -3,6 +3,15 @@
 <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132804706-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-132804706-1');
+    </script>
 
     <!--- Basic Page Needs
     ================================================== -->
@@ -45,7 +54,7 @@
 
         <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
+            <li><a class="smoothscroll" href="#about">About Me</a></li>
             <li><a class="smoothscroll" href="#resume">Education</a></li>
             <li><a class="smoothscroll" href="#portfolio">Projects/Games</a></li>
         </ul> <!-- end #nav -->
@@ -181,15 +190,10 @@
 
                     <h3>Moorpark College</h3>
                     <p class="info">A.S. Degree in General Studies with an Emphasis in Science <span>&bull;</span> <em class="date">2018</em></p>
-
-                    <p>
-
-                </p>
-
                 </div>
-        </div> <!-- main-col end -->
-
-    </div> <!-- End Education -->
+            </div> <!-- main-col end -->
+        </div> <!-- End Education -->
+    </div>
 </section> <!-- Resume Section End-->
 
 
@@ -202,7 +206,8 @@
         <div class="twelve columns collapsed">
 
             <h1>Check Out Some of My Projects!</h1>
-            <h3>*Click on an Image Below To View My Github Repo for each Project!</h3>
+            <h3>Click Below To View:</h3>
+            <h3>*More Information For My Projects!</h3>
             <!-- portfolio-wrapper -->
             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
 
@@ -211,7 +216,7 @@
 
                         <a href="https://github.com/dturn003/CS180-Split/tree/Sprint3Plan">
                             <img alt="" src="images/portfolio/split.png">
-                            <h5>Split Web Application</h5>
+                            <h5><a href="https://github.com/dturn003/CS180-Split/tree/Sprint3Plan">Split Web Application</a></h5>
                             <h5>Built using</h5>
                             <h5>(*U.I-Bootstrap & DataBase-Firebase)</h5>
                         </a>
@@ -224,8 +229,20 @@
 
                         <a href="https://github.com/dhuecker/ProfileWebsite">
                             <img alt="" src="images/portfolio/logo.png">
-                            <h5>This Website!</h5>
+                            <h5><a href="https://github.com/dhuecker/ProfileWebsite">This Website!</a></h5>
                             <h5>Built using (*U.I-JQuery)</h5>
+                        </a>
+
+                    </div>
+                </div> <!-- item end -->
+
+                <div class="columns portfolio-item">
+                    <div>
+
+                        <a href="rpgInfo.html" title="">
+                            <img alt="" src="images/portfolio/rpglogo.jpg">
+                            <h5><a href="rpgInfo.html">RetroPi Gaming</a></h5>
+                            <h5>(*Classic Gaming Console)</h5>
                         </a>
 
                     </div>
@@ -236,15 +253,13 @@
 
                         <a href="https://github.com/dhuecker/linux_cmd_rshell" title="">
                             <img alt="" src="images/portfolio/cmd.png">
-                            <h5>Linux Terminal</h5>
+                            <h5><a href="https://github.com/dhuecker/linux_cmd_rshell">Linux Terminal</a></h5>
                             <h5>(*Project Name:Rshell coded in C++)</h5>
                         </a>
 
                     </div>
                 </div> <!-- item end -->
-
             </div> <!-- portfolio-wrapper end -->
-
         </div> <!-- twelve columns end -->
 
         <div class="row">
@@ -253,7 +268,8 @@
 
                 <h1>Here Are a Few Games I Remade</h1>
                 <h1>(*using HTML and JavaScript)</h1>
-                <h3>*Click on an Image Below To Start a Game!</h3>
+                <h3>Click Below To:</h3>
+                <h3>*Start A Game!</h3>
 
                 <!-- portfolio-wrapper -->
                 <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
@@ -262,7 +278,7 @@
                         <div>
                             <a href="Bird/index.html">
                                 <img alt="" src="images/portfolio/bird.png">
-                                <h5>Flappy Bird</h5>
+                                <h5><a href="Bird/index.html">Flappy Bird</a></h5>
                                 <h5><span>(*Mobile Supported:Yes)</span></h5>
                             </a>
                         </div>
@@ -273,7 +289,7 @@
 
                             <a href="Snake/index.html">
                                 <img alt="" src="images/portfolio/snake.jpg">
-                                <h5>Snake</h5>
+                                <h5><a href="Snake/index.html">Snake</a></h5>
                                 <h5><span>(*Mobile Supported:No)</span></h5>
                             </a>
 
@@ -285,7 +301,7 @@
 
                             <a href="Pong/index.html" title="">
                                 <img alt="" src="images/portfolio/pong.png">
-                                <h5>Pong</h5>
+                                <h5><a href="Pong/index.html">Pong</a></h5>
                                 <h5><span>(*Mobile Supported:No)</span></h5>
                             </a>
 
@@ -296,9 +312,9 @@
 
             </div> <!-- twelve columns end -->
 
-        <!-- Modal Popup
-         --------------------------------------------------------------- -->
+        </div>
     </div> <!-- row End -->
+
 
 </section> <!-- Portfolio Section End-->
 
@@ -372,6 +388,14 @@
                                 <p>"If you don’t love it, you’re going to fail"
                                 </p>
                                 <cite>Steve Jobs </cite>
+                            </blockquote>
+                        </li> <!-- slide ends -->
+
+                        <li>
+                            <blockquote>
+                                <p>“That's the thing about people who think they hate computers. What they really hate is lousy programmers”
+                                </p>
+                                <cite>Larry Niven</cite>
                             </blockquote>
                         </li> <!-- slide ends -->
 
